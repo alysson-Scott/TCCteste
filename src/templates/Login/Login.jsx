@@ -1,40 +1,22 @@
 import React from 'react'
 import './Login.css'
-import email_icon from '../../assets/email.png'
-import password_icon from '../../assets/password.png'
-import { Link } from 'react-router-dom'
-
+import Maromba from '../../assets/home2.jpg'
 
 const Login = () => {
   return (
-    <div className="loginform">
-    <div className='quad2'>
-    <div className='header2'>
-        <div className='text'>Faça Login</div>
-        <div className='underline'></div>
-    </div>
+       <div className='w-full h-screen flex items-start'>
+        <div className='relative w-1/2 h-full flex flex-col'>
+          <div className='absolute-top-[20%] left-[10%] flex flex-col'>
+            <h1 className='text-4xl text-black font-bold my-4'>Nutrindo hoje os atletas de amanhã</h1>
+            <p className='text-xl text-black font-normal'>Nós garantimos os melhores suplementos para a melhor performance</p>
+          </div>
+          <img src={Maromba}  className='w-full h-full object-cover'/>
+        </div>
+ 
+         <div className='w-1/2 h-full bg-black flex flex-col'>
 
-    <div className='inputs2'>
-    <div className='input2'>
-       <img src={email_icon} alt=""/>
-       <input type="email" placeholder="Email"/>
-    </div>
-
-    <div className='input2'>
-       <img src={password_icon} alt=""/>
-       <input type="password" placeholder="Senha"/>
-      </div>
-    </div>
-
-    <Link to={"/forgotpass"} className='forgotpass'>Esqueceu a senha?</Link>
-  
-
-    <div className="submit-container">
-        <Link to={"/home"} className="submit">Entrar</Link>
-      
-    </div>
-    </div>
-</div>
+        </div>
+       </div>
   )
 }
 
