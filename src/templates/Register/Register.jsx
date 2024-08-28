@@ -1,43 +1,44 @@
 import React from 'react'
-import './Register.css'
-import user_icon from '../../assets/person.png'
-import email_icon from '../../assets/email.png'
-import password_icon from '../../assets/password.png'
+import Maromba from '../../assets/home2.jpg'
+import Logo from '../../assets/KitFit.png'
 import { Link } from 'react-router-dom'
 
 const Register = () => {
     return (
-        <div className='registerform'>
-            <div className='quad'>
-            <div className='header'>
-                <div className='text'>Cadastre-se</div>
-                <div className='underline'></div>
-            </div>
+        <div className='w-full h-screen flex items-start'>
+        
+ 
+        <div className='w-1/2 h-full bg-[#000000] flex flex-col p-20 justify-around items-center'>
+         <img src={Logo} className='w-1/2 h-1/4 mb-4' />
 
-            <div className='inputs'>
-            <div className='input'>
-               <img src={user_icon} alt=""/>
-               <input type="text" placeholder="Nome"/>
-            </div>
+         <div className='w-full flex flex-col max-w-[400px]'>
+           <div className='w-full flex flex-col mb-10'>
+             <h3 className='text-3xl font-semibold mb-2 text-[#ffffff]'>Cadastro</h3>
+             <p className='text-[#ffffff] text-base'>Por-favor, efetue o cadastro.</p>
+             </div>
 
-            <div className='input'>
-               <img src={email_icon} alt=""/>
-               <input type="email" placeholder="Email"/>
-            </div>
+             <div className='w-full flex flex-col'>
+               <input className='w-full text-[#ffffff] my-2 py-2 border-b border-[#ffffff] outline-none focus:outline-none bg-[#000000]' type="email" placeholder='Email' />
+               <input className='w-full text-[#ffffff] my-2 py-2 border-b border-[#ffffff] outline-none focus:outline-none bg-[#000000]' type="text" placeholder='Nome de usuario' />
+               <input className='w-full text-[#ffffff] my-2 py-2 border-b border-[#ffffff] outline-none focus:outline-none bg-[#000000]' type="password" placeholder='Senha' /> 
+             </div>
 
-            <div className='input'>
-               <img src={password_icon} alt=""/>
-               <input type="password" placeholder="Senha"/>
-              </div>
-            </div>
+             <div className='w-full flex flex-col my-4'>
+             <button className='w-full bg-[#F36D04] rounded-md my-2 p-4 text-center flex items-center justify-center cursor-pointer'>
+               Efetuar o cadastro
+             </button>
+             </div>
+         </div>
 
-            <div className="alreadyhave">Já tem uma conta?<span><Link to={"/login"}>Faça Login</Link></span></div>
-            <div className="submit-container">
-                <Link to={"/login"} className="submit">Cadastrar</Link>
-                
-            </div>
-            </div>
-        </div>
+         <div className='w-full flex items-center justify-center'>
+         <p className='text-[#ffffff] text-sn font-normal'>Ja tem uma conta? <Link to={"/login"}><span className='font-semibold text-[#ffffff] cursor-pointer'>Entre aqui!</span></Link> </p>
+         </div>
+
+       </div>
+       <div className='relative w-1/2 h-full flex flex-col'>
+         <img src={Maromba} className='w-full h-full object-cover' />
+       </div>
+      </div>
     )
 }
 
