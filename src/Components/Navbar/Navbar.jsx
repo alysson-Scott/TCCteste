@@ -5,6 +5,7 @@ import kitFit from '../../assets/KitFit.png';
 import Button from './button';
 
 
+
 const Navbar = () => {
   
 
@@ -16,11 +17,15 @@ const Navbar = () => {
                     </span>
                     <img src={kitFit} className='h-[50px] md:ml-5 ' />
                 </div>
-                <ul className='text-white md:flex md:items-center'>
-                    <li className='md:ml-8 text-xl'><a href="#inicioscroll"className="hover:text-orange duration-500">Início</a></li>
-                    <li className='md:ml-8 text-xl'><a href="#aboutscroll" className="hover:text-orange duration-500">Sobre nós</a></li>
-                    <li className='md:ml-8 text-xl'><a href='#contatoscroll' className="hover:text-orange duration-500">Contato</a></li>
-                    <Button></Button>
+                <div>
+                <ion-icon name="menu"></ion-icon>
+                </div>
+                <ul className='text-white md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-black md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in'>
+                    <li className='md:ml-8 text-xl md:my-0 my-7'><a href="#inicioscroll"className="hover:text-orange duration-500">Início</a></li>
+                    <li className='md:ml-8 text-xl md:my-0 my-7'><a href="#aboutscroll" className="hover:text-orange duration-500">Sobre nós</a></li>
+                    <li className='md:ml-8 text-xl md:my-0 my-7'><a href='#contatoscroll' className="hover:text-orange duration-500">Contato</a></li>
+                    <Link to={"/login"}><Button>Entrar</Button></Link>
+                    <Link to={"/register"}><Button>Cadastrar-se</Button></Link>
                 </ul>
             </div>
         </div>
