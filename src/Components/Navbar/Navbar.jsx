@@ -2,20 +2,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import kitFit from '../../assets/KitFit.png';
+import Button from './button';
+
 
 const Navbar = () => {
   
 
     return (
-        <nav className="container dark-nav">
-            <img src={kitFit} alt="" className="logo" />
-            <ul>
-                <li><a href="#inicioscroll"className="btn">Início</a></li>
-                <li><a href="#aboutscroll" className="btn">Sobre nós</a></li>
-                <li><a href='#contatoscroll' className="btn">Contato</a></li>
-                <li> <Link to={'/register'} className="btn btn-login">Entrar/Cadastrar-se</Link></li>
-            </ul>
-        </nav>
+        <div className='shadow-md w-full fixed top-0 left-0 '>
+            <div className='md:flex items-center justify-between bg-black py-4 md:px-10 px-7'>
+                <div className='font-bold text-2xl cursor-pointer flex items-center text-white' >
+                    <span className='text-3xl text-white mr-1 pt-2'>
+                    </span>
+                    <img src={kitFit} className='h-[50px] md:ml-5 ' />
+                </div>
+                <ul className='text-white md:flex md:items-center'>
+                    <li className='md:ml-8 text-xl'><a href="#inicioscroll"className="hover:text-orange duration-500">Início</a></li>
+                    <li className='md:ml-8 text-xl'><a href="#aboutscroll" className="hover:text-orange duration-500">Sobre nós</a></li>
+                    <li className='md:ml-8 text-xl'><a href='#contatoscroll' className="hover:text-orange duration-500">Contato</a></li>
+                    <Button></Button>
+                </ul>
+            </div>
+        </div>
     );
 };
 
