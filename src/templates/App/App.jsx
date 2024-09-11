@@ -16,6 +16,7 @@ function App() {
     return(
   <div>
     <Navbar/>
+    <Inicio/>
     <Suplemento/>
     <About/>
     <Contato/>
