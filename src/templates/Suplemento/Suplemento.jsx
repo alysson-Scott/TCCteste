@@ -10,7 +10,7 @@ const Suplemento = () => {
   return (
     <div className='flex flex-col'>
     <>
-    <Cards img={Produto} nome="Produto" desc="hsdafgsduhagfhdsaghfgasuhgfsadgfsaghfgsagfhag" sub="fasdhfgahgfjgakjgk"/>
+    <Cards img={Produto} nome="Produto" desc="Este suplemento é o melhor do mercado" sub="fasdhfgahgfjgakjgk"/>
     </>
     </div>
     

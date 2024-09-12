@@ -1,6 +1,6 @@
 import React from 'react'
 import './Inicio.css'
-import Maromba from "../../assets/home2.jpg"
+import Maromba from "../../assets/bannersuple.png"
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>

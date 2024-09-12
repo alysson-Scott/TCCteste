@@ -29,7 +29,7 @@ const Login = () => {
                 <Link to={"/forgotpass"}><p className='text-sm font-medium whitespace-nowrap cursor-pointer text-[#ffffff]'>Esqueceu a senha?</p></Link>
               </div>
               <div className='w-full flex flex-col my-4'>
-              <button className='w-full bg-[#F36D04] rounded-md my-2 p-4 text-center flex items-center justify-center cursor-pointer'>
+              <button className='w-full bg-[#F36D04] font-bold rounded-md my-2 p-4 text-center flex items-center justify-center cursor-pointer'>
                 Entrar
               </button>
               </div>
